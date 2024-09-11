@@ -10,5 +10,18 @@ interview:
       beforeUpdatedTime: 'The current time is before the updated date and time.'
       afterUpdatedTime: 'The current time is after the updated date and time.'
       sameAsUpdatedTime: 'The current time is the same as the updated date and time.'
+    JSONEditor:
+      chooseFile: 'Choose File'
+      close: 'Close'
+      swap: 'Swap'
+    MinCoins:
+      coins: "Coins"
+      amount: "Amount"
+      output: "Output"
+      summit: "Submit"
+      result: "Result:"
+    Parentheses:
+      input: "Input"
+      output: "Output: "
+      execute: "Execute"
 product:
-  technical-interview: 'Technical Interview'
