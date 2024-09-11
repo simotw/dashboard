@@ -1,19 +1,27 @@
-<script lang="ts">
-import Vue from "vue";
-import Tabbed from "@shell/components/Tabbed/index.vue";
-import Tab from "@shell/components/Tabbed/Tab.vue";
-import { Counter } from "../components/Counter";
-import { DateTimeForm } from "../components/DateTimeForm";
-import { JSONEditor } from "../components/JSONEditor";
-import { MinCoins } from "../components/MinCoins";
-import { Parentheses } from "../components/Parentheses";
+<script lang='ts'>
+import Vue from 'vue';
+import Tabbed from '@shell/components/Tabbed/index.vue';
+import Tab from '@shell/components/Tabbed/Tab.vue';
+import { Counter } from '../components/Counter';
+import { DateTimeForm } from '../components/DateTimeForm';
+import { JSONEditor } from '../components/JSONEditor';
+import { MinCoins } from '../components/MinCoins';
+import { Parentheses } from '../components/Parentheses';
 interface Data {}
 
 // Data, Methods, Computed, Props
 export default Vue.extend<Data, any, any, any>({
-  components: { Tabbed, Tab, Counter, DateTimeForm, JSONEditor, MinCoins, Parentheses },
+  components: {
+    Tabbed,
+    Tab,
+    Counter,
+    DateTimeForm,
+    JSONEditor,
+    MinCoins,
+    Parentheses,
+  },
 
-  layout: "plain",
+  layout: 'plain',
 
   data() {
     return {};
@@ -26,38 +34,46 @@ export default Vue.extend<Data, any, any, any>({
 </script>
 
 <template>
-  <Tabbed 
-    :useHash="false" 
-  >
-    <Tab 
-      label="Tab1" 
+  <Tabbed>
+    <Tab
+      label="Tab1"
       name="Tab1"
     >
-      <div name="Tab1"><Counter /></div>
+      <div name="Tab1">
+        <Counter />
+      </div>
     </Tab>
-    <Tab 
-      label="Tab2" 
+    <Tab
+      label="Tab2"
       name="Tab2"
     >
-      <div name="Tab2"><DateTimeForm /></div>
+      <div name="Tab2">
+        <DateTimeForm />
+      </div>
     </Tab>
-    <Tab 
-      label="Tab3" 
+    <Tab
+      label="Tab3"
       name="Tab3"
     >
-      <div name="Tab3"><JSONEditor /></div>
+      <div name="Tab3">
+        <JSONEditor />
+      </div>
     </Tab>
-    <Tab 
-      label="Tab4" 
+    <Tab
+      label="Tab4"
       name="Tab4"
     >
-      <div name="Tab4"><MinCoins /></div>
+      <div name="Tab4">
+        <MinCoins />
+      </div>
     </Tab>
-    <Tab 
-      label="Tab5" 
+    <Tab
+      label="Tab5"
       name="Tab5"
     >
-      <div name="Tab5"><Parentheses /></div>
+      <div name="Tab5">
+        <Parentheses />
+      </div>
     </Tab>
   </Tabbed>
 </template>
