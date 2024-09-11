@@ -6,11 +6,12 @@ import { Counter } from "../components/Counter";
 import { DateTimeForm } from "../components/DateTimeForm";
 import { JSONEditor } from "../components/JSONEditor";
 import { MinCoins } from "../components/MinCoins";
+import { Parentheses } from "../components/Parentheses";
 interface Data {}
 
 // Data, Methods, Computed, Props
 export default Vue.extend<Data, any, any, any>({
-  components: { Tabbed, Tab, Counter, DateTimeForm, JSONEditor, MinCoins },
+  components: { Tabbed, Tab, Counter, DateTimeForm, JSONEditor, MinCoins, Parentheses },
 
   layout: "plain",
 
@@ -56,7 +57,7 @@ export default Vue.extend<Data, any, any, any>({
       label="Tab5" 
       name="Tab5"
     >
-      <div name="Tab5">Tab5 tab content.</div>
+      <div name="Tab5"><Parentheses /></div>
     </Tab>
   </Tabbed>
 </template>
