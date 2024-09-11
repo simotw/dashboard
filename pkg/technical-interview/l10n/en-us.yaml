@@ -1,5 +1,14 @@
 interview:
   tabPage:
     title: 'Technical Interview - Tabs'
+  components:
+    DateTimeForm:
+      second: 'second'
+      minute: 'minute'
+      hour: 'hour'
+      submit: 'Submit'
+      beforeUpdatedTime: 'The current time is before the updated date and time.'
+      afterUpdatedTime: 'The current time is after the updated date and time.'
+      sameAsUpdatedTime: 'The current time is the same as the updated date and time.'
 product:
   technical-interview: 'Technical Interview'

@@ -2,13 +2,13 @@
 import Vue from "vue";
 import Tabbed from "@shell/components/Tabbed/index.vue";
 import Tab from "@shell/components/Tabbed/Tab.vue";
-
 import { Counter } from "../components/Counter";
+import { DateTimeForm } from "../components/DateTimeForm";
 interface Data {}
 
 // Data, Methods, Computed, Props
 export default Vue.extend<Data, any, any, any>({
-  components: { Tabbed, Tab, Counter },
+  components: { Tabbed, Tab, Counter, DateTimeForm },
 
   layout: "plain",
 
@@ -36,7 +36,7 @@ export default Vue.extend<Data, any, any, any>({
       label="Tab2" 
       name="Tab2"
     >
-      <div name="Tab2">Tab2 tab content.</div>
+      <div name="Tab2"><DateTimeForm /></div>
     </Tab>
     <Tab 
       label="Tab3" 
