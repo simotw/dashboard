@@ -3,11 +3,12 @@ import Vue from "vue";
 import Tabbed from "@shell/components/Tabbed/index.vue";
 import Tab from "@shell/components/Tabbed/Tab.vue";
 
+import { Counter } from "../components/Counter";
 interface Data {}
 
 // Data, Methods, Computed, Props
 export default Vue.extend<Data, any, any, any>({
-  components: { Tabbed, Tab },
+  components: { Tabbed, Tab, Counter },
 
   layout: "plain",
 
@@ -29,7 +30,7 @@ export default Vue.extend<Data, any, any, any>({
       label="Tab1" 
       name="Tab1"
     >
-      <div name="Tab1">Tab1 tab content.</div>
+      <div name="Tab1"><Counter /></div>
     </Tab>
     <Tab 
       label="Tab2" 
